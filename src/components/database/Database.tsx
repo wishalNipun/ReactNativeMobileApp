@@ -20,13 +20,14 @@ export interface Item {
   productImage: any;
   isAvailable: boolean;
   productImageList: any[];
+  tax:number;
 }
 export const Items: Item[] = [
   {
     id: 1,
     category: 'product',
     productName: 'MI Super Bass Bluetooth Wireless Headphones',
-    productPrice: 1799,
+    productPrice: 30000,
     description:
       'Up to 20 hours battery life | Super powerful Bass | 40mm dynamic driver | Pressure less ear muffs | Bluetooth 5.0 | Voice control',
     isOff: true,
@@ -38,6 +39,7 @@ export const Items: Item[] = [
       require('../database/images/products/Mi2.png'),
       require('../database/images/products/Mi3.png'),
     ],
+    tax:3,
   },
   {
     id: 2,
@@ -54,6 +56,7 @@ export const Items: Item[] = [
       require('../database/images/products/boat2.png'),
       require('../database/images/products/boat3.png'),
     ],
+    tax:5,
   },
   {
     id: 3,
@@ -71,12 +74,13 @@ export const Items: Item[] = [
       require('../database/images/accessories/boatairpods2.png'),
       require('../database/images/accessories/boatairpods3.png'),
     ],
+    tax:0,
   },
   {
     id: 4,
     category: 'accessory',
     productName: 'boAt Bassheads 242',
-    productPrice: 399,
+    productPrice: 500,
     description:
       'Fly into your workouts with precise tones that inspire and energize your system with its HD sound, all the time.',
     isOff: false,
@@ -87,12 +91,13 @@ export const Items: Item[] = [
       require('../database/images/accessories/boatbassheads2.png'),
       require('../database/images/accessories/boatbassheads3.png'),
     ],
+    tax:10,
   },
   {
     id: 5,
     category: 'accessory',
     productName: 'boAt Rockerz 255 Pro+',
-    productPrice: 1499,
+    productPrice: 4000,
     description:
       'The unbeatable boAt signature sound shines through no matter what are you playing courtesy its 10mm drivers.',
     isOff: false,
@@ -103,6 +108,7 @@ export const Items: Item[] = [
       require('../database/images/accessories/boatrockerz2.png'),
       require('../database/images/accessories/boatrockerz3.png'),
     ],
+    tax:5,
   },
   {
     id: 6,
@@ -120,5 +126,6 @@ export const Items: Item[] = [
       require('../database/images/accessories/boultairbass2.png'),
       require('../database/images/accessories/boultairbass3.png'),
     ],
+    tax:0,
   },
 ];

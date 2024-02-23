@@ -16,7 +16,6 @@ const Home = ({navigation}: any) => {
   const [products, setProducts] = useState<Item[]>([]);
   const [accessory, setAccessory] = useState<Item[]>([]);
 
-  //get called on screen loads
   useEffect(() => {
     const nav = navigation.addListener('focus', () => {
       getDataFromDB();
@@ -24,8 +23,6 @@ const Home = ({navigation}: any) => {
 
     return nav;
   }, [navigation]);
-
-  //get data from DB
 
   const getDataFromDB = () => {
     let productList = [];
