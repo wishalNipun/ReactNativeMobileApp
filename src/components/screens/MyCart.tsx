@@ -48,26 +48,37 @@ const MyCart = ({navigation}: any) => {
   const getTotal = (productData: any) => {
     let subtotal = 0;
     let taxVal = 0;
-    let totalTax =0;
+    let totalTax = 0;
+
     for (let index = 0; index < productData.length; index++) {
       let productPrice = productData[index].productPrice;
 
-      console.log('product price' + productPrice);
 
       let tax = productData[index].tax;
-
-      subtotal = subtotal + productPrice;
-
-      console.log('tax', tax);
       taxVal = productPrice * (tax / 100);
-      totalTax = totalTax+taxVal;
+      totalTax = totalTax + taxVal;
+
+      let bool = productData[index].isOff;
+
+      if (bool) {
+        let discountPercentage = productData[index].offPercentage;
+
+        const discountAmount = (productPrice * discountPercentage) / 100;
+        productPrice = productPrice - discountAmount;
+
+        subtotal = subtotal + productPrice;
+
+      }else{
+        subtotal = subtotal + productPrice;
+      }
+
+      
+      
+
     }
     setsubTotal(subtotal);
     setTaxVal(taxVal);
     settotalTax(totalTax);
-    
-
-   
   };
 
   //remove data from Cart
@@ -172,8 +183,14 @@ const MyCart = ({navigation}: any) => {
                 style={{
                   color: COLOURS.red,
                 }}>
-                (~LKR
-                {data.productPrice + (data.productPrice)*((data.tax)/100)})
+                ( LKR{' '}
+                {data.isOff
+                  ? data.productPrice +
+                    data.productPrice * (data.tax / 100) -
+                    data.productPrice * (data.offPercentage / 100)
+                  : data.productPrice +
+                    data.productPrice * (data.tax / 100)}{' '}
+                )
               </Text>
             </View>
           </View>
@@ -534,7 +551,7 @@ const MyCart = ({navigation}: any) => {
                   fontWeight: '500',
                   color: COLOURS.black,
                 }}>
-                LKR {subtotal+totalTax}
+                LKR {subtotal + totalTax}
               </Text>
             </View>
           </View>
@@ -568,7 +585,7 @@ const MyCart = ({navigation}: any) => {
               color: COLOURS.white,
               textTransform: 'uppercase',
             }}>
-            CHECKOUT (LKR {subtotal + totalTax} ) 
+            CHECKOUT (LKR {subtotal + totalTax} )
           </Text>
         </TouchableOpacity>
       </View>

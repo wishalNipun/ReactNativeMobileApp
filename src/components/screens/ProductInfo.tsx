@@ -229,7 +229,7 @@ const ProductInfo = ({route, navigation}: any) => {
             }}>
             <Text
               style={{
-                fontSize: 24,
+                fontSize: 22,
                 fontWeight: '600',
                 letterSpacing: 0.5,
                 marginVertical: 4,
@@ -260,7 +260,7 @@ const ProductInfo = ({route, navigation}: any) => {
               lineHeight: 20,
               maxWidth: '85%',
               maxHeight: 44,
-              marginBottom: 18,
+              marginBottom: 5,
             }}>
             {product.description}
           </Text>
@@ -272,7 +272,7 @@ const ProductInfo = ({route, navigation}: any) => {
               marginVertical: 14,
               borderBottomColor: COLOURS.backgroundLight,
               borderBottomWidth: 1,
-              paddingBottom: 20,
+              paddingBottom: 10,
             }}>
             <View
               style={{
@@ -317,21 +317,25 @@ const ProductInfo = ({route, navigation}: any) => {
               style={{
                 fontSize: 18,
                 fontWeight: '500',
-                maxWidth: '85%',
+                maxWidth: '100%',
                 color: COLOURS.black,
                 marginBottom: 4,
               }}>
-              LKR {product.productPrice}.00
+              LKR {product.productPrice}.00{'    '}
+              Discount : {product.isOff ? (product.productPrice)*(product.offPercentage/100) : 'No'}
             </Text>
             <Text
               style={{
                 color: COLOURS.backgroundDark,
+                marginBottom: 4,
               }}>
-              Tax Rate {product.tax}%~ LKR{' '}
-              {product.productPrice * (product.tax / 100)} (LKR
-              {product.productPrice +
-                product.productPrice * (product.tax / 100)}
-              )
+              Tax Rate {product.tax}%   :  LKR{' '}{product.productPrice * (product.tax / 100)}
+              </Text>
+            <Text
+              style={{
+                color: COLOURS.red,
+              }}>
+              Price LKR {product.isOff ? ((product.productPrice + product.productPrice * (product.tax / 100))-(product.productPrice)*(product.offPercentage/100)) : (product.productPrice + product.productPrice * (product.tax / 100))}
             </Text>
           </View>
         </View>
