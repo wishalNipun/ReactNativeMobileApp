@@ -20,7 +20,7 @@ export interface Item {
   productImage: any;
   isAvailable: boolean;
   productImageList: any[];
-  tax:number;
+  tax: number;
 }
 export const Items: Item[] = [
   {
@@ -39,7 +39,7 @@ export const Items: Item[] = [
       require('../database/images/products/WALLET-Brand2.png'),
       require('../database/images/products/WALLET-Brand3.png'),
     ],
-    tax:0,
+    tax: 0,
   },
   {
     id: 2,
@@ -57,7 +57,7 @@ export const Items: Item[] = [
       require('../database/images/products/washmachine2.png'),
       require('../database/images/products/washmachine3.png'),
     ],
-    tax:5,
+    tax: 5,
   },
   {
     id: 3,
@@ -75,93 +75,96 @@ export const Items: Item[] = [
       require('../database/images/products/guitar2.png'),
       require('../database/images/products/guitar3.png'),
     ],
-    tax:8,
+    tax: 8,
   },
   {
     id: 4,
     category: 'product',
-    productName: 'boAt Rockerz 450 Bluetooth Headphone',
+    productName: 'Wireless Bluetooth Headphone',
     productPrice: 5000,
     description:
-      'boAt Rockerz 450 M is an on-ear wireless headset that has been ergonomically designed to meet the needs of music lovers.',
+      'Wireless Headphone Noise Cancelling Headset with Microphone,Mute Button,25 Hrs Playtime, 20 Hrs Talking,for Travel, Home Learning,Office Meeting.',
     isOff: false,
-    productImage: require('../database/images/products/boat1.png'),
+    productImage: require('../database/images/products/headset1.png'),
     isAvailable: true,
     productImageList: [
-      require('../database/images/products/boat1.png'),
-      require('../database/images/products/boat2.png'),
-      require('../database/images/products/boat3.png'),
+      require('../database/images/products/headset1.png'),
+      require('../database/images/products/headset2.png'),
+      require('../database/images/products/headset3.png'),
     ],
-    tax:5,
+    tax: 5,
   },
   {
     id: 5,
     category: 'accessory',
-    productName: 'boAt Airdopes 441',
-    productPrice: 8000,
+    productName:
+      'Vnox Mens Stainless Steel 8MM Link Chain Miami Cuban Bracelets',
+    productPrice: 1000,
     description:
-      'Bluetooth: It has Bluetooth v5.0 with a range of 10m and is compatible with Android & iOS',
+      'Model Number : VNOX-BR-1319S-21.5 | Compatibility: All Compatible | Function : Trendy | Chain Type : Link Chain | Shapepattern : Round',
     isOff: true,
     offPercentage: 5,
-    productImage: require('../database/images/accessories/boatairpods1.png'),
+    productImage: require('../database/images/accessories/braselet1.png'),
     isAvailable: true,
     productImageList: [
-      require('../database/images/accessories/boatairpods1.png'),
-      require('../database/images/accessories/boatairpods2.png'),
-      require('../database/images/accessories/boatairpods3.png'),
+      require('../database/images/accessories/braselet1.png'),
+      require('../database/images/accessories/braselet2.png'),
+      require('../database/images/accessories/braselet3.png'),
     ],
-    tax:0,
+    tax: 0,
   },
   {
     id: 6,
     category: 'accessory',
-    productName: 'boAt Bassheads 242',
-    productPrice: 500,
+    productName:
+      'Huitan Stylish Lady Timeless Finger Ring for Wedding Ceremony',
+    productPrice: 550,
     description:
-      'Fly into your workouts with precise tones that inspire and energize your system with its HD sound, all the time.',
+      'BRAND: HUITAN | MODEL NUMBER: Q411 | Material: Brass, Cubic Zirconia | WEIGHT: About 4.9g | CONDITION: 100% Brand-new excellent craft.',
     isOff: false,
-    productImage: require('../database/images/accessories/boatbassheads1.png'),
+    productImage: require('../database/images/accessories/ring1.png'),
     isAvailable: true,
     productImageList: [
-      require('../database/images/accessories/boatbassheads1.png'),
-      require('../database/images/accessories/boatbassheads2.png'),
-      require('../database/images/accessories/boatbassheads3.png'),
+      require('../database/images/accessories/ring1.png'),
+      require('../database/images/accessories/ring2.png'),
+      require('../database/images/accessories/ring3.png'),
     ],
-    tax:10,
+    tax: 10,
   },
   {
     id: 7,
     category: 'accessory',
-    productName: 'boAt Rockerz 255 Pro+',
-    productPrice: 4000,
+    productName: 'Magnetic Car Phone Holder Support GPS Stand',
+    productPrice: 2000,
     description:
-      'The unbeatable boAt signature sound shines through no matter what are you playing courtesy its 10mm drivers.',
+      'Phone Holder Support GPS Stand For iPhone 14 13 Promax Xiaomi Samsung Compatible iPhone Model iPhone 3G/3GS,iPhone 4,iPhone 4S,iphone 5,iPhone12 Pro Max',
     isOff: false,
-    productImage: require('../database/images/accessories/boatrockerz1.png'),
+    productImage: require('../database/images/accessories/phonemount1.png'),
     isAvailable: false,
     productImageList: [
-      require('../database/images/accessories/boatrockerz1.png'),
-      require('../database/images/accessories/boatrockerz2.png'),
-      require('../database/images/accessories/boatrockerz3.png'),
+      require('../database/images/accessories/phonemount1.png'),
+      require('../database/images/accessories/phonemount2.png'),
+      require('../database/images/accessories/phonemount3.png'),
     ],
-    tax:5,
+    tax: 5,
   },
   {
     id: 8,
     category: 'accessory',
-    productName: 'Boult Audio AirBass Propods TWS',
-    productPrice: 15000,
-    offPercentage: 5,
+    productName:
+      'Kitchen Accessories Scissors Multi Function Tool Food Scissor For Chicken',
+    productPrice: 4500,
+    offPercentage: 10,
     description:
-      'One Touch Control & Voice Assistant: With one multifunction button, you can play/pause, previous/next track and answer/hang-up calls.Voice assistant function lets you access siri/Google Assistant',
+      'Heavy duty kitchen scissors are made of high-quality stainless steel blades and aluminum alloy handles, which increase a certain thickness, make them comfortable to hold, and are sharper and stronger',
     isOff: true,
-    productImage: require('../database/images/accessories/boultairbass1.png'),
+    productImage: require('../database/images/accessories/scissor1.png'),
     isAvailable: true,
     productImageList: [
-      require('../database/images/accessories/boultairbass1.png'),
-      require('../database/images/accessories/boultairbass2.png'),
-      require('../database/images/accessories/boultairbass3.png'),
+      require('../database/images/accessories/scissor1.png'),
+      require('../database/images/accessories/scissor2.png'),
+      require('../database/images/accessories/scissor3.png'),
     ],
-    tax:0,
+    tax: 0,
   },
 ];

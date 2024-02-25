@@ -35,8 +35,6 @@ const ProductInfo = ({route, navigation}: any) => {
     return unsubscribe;
   }, [navigation]);
 
-  //get product data by productID
-
   const getDataFromDB = async () => {
     for (let index = 0; index < Items.length; index++) {
       if (Items[index].id == productID) {
@@ -45,8 +43,6 @@ const ProductInfo = ({route, navigation}: any) => {
       }
     }
   };
-
-  //add to cart
 
   const addToCart = async (id: number) => {
     let itemArray: any = await AsyncStorage.getItem('cartItems');
@@ -80,8 +76,6 @@ const ProductInfo = ({route, navigation}: any) => {
       }
     }
   };
-
-  //product horizontal scroll product card
   const renderProduct = ({item, index}: any) => {
     return (
       <View
@@ -249,7 +243,7 @@ const ProductInfo = ({route, navigation}: any) => {
               }}
             />
           </View>
-          
+
           <Text
             style={{
               fontSize: 12,
@@ -258,7 +252,7 @@ const ProductInfo = ({route, navigation}: any) => {
               letterSpacing: 1,
               opacity: 0.5,
               lineHeight: 20,
-              maxWidth: '85%',
+              maxWidth: '100%',
               maxHeight: 44,
               marginBottom: 5,
             }}>
@@ -322,20 +316,30 @@ const ProductInfo = ({route, navigation}: any) => {
                 marginBottom: 4,
               }}>
               LKR {product.productPrice}.00{'    '}
-              Discount : {product.isOff ? (product.productPrice)*(product.offPercentage/100) : 'No'}
+              Discount :{' '}
+              {product.isOff
+                ? product.productPrice * (product.offPercentage / 100)
+                : 'No'}
             </Text>
             <Text
               style={{
                 color: COLOURS.backgroundDark,
                 marginBottom: 4,
               }}>
-              Tax Rate {product.tax}%   :  LKR{' '}{product.productPrice * (product.tax / 100)}
-              </Text>
+              Tax Rate {product.tax}% : LKR{' '}
+              {product.productPrice * (product.tax / 100)}
+            </Text>
             <Text
               style={{
                 color: COLOURS.red,
               }}>
-              Price LKR {product.isOff ? ((product.productPrice + product.productPrice * (product.tax / 100))-(product.productPrice)*(product.offPercentage/100)) : (product.productPrice + product.productPrice * (product.tax / 100))}
+              Price LKR{' '}
+              {product.isOff
+                ? product.productPrice +
+                  product.productPrice * (product.tax / 100) -
+                  product.productPrice * (product.offPercentage / 100)
+                : product.productPrice +
+                  product.productPrice * (product.tax / 100)}
             </Text>
           </View>
         </View>

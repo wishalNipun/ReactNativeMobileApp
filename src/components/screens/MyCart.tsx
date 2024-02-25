@@ -44,7 +44,6 @@ const MyCart = ({navigation}: any) => {
     }
   };
 
-  //get total price of all items in the cart
   const getTotal = (productData: any) => {
     let subtotal = 0;
     let taxVal = 0;
@@ -52,7 +51,6 @@ const MyCart = ({navigation}: any) => {
 
     for (let index = 0; index < productData.length; index++) {
       let productPrice = productData[index].productPrice;
-
 
       let tax = productData[index].tax;
       taxVal = productPrice * (tax / 100);
@@ -67,21 +65,15 @@ const MyCart = ({navigation}: any) => {
         productPrice = productPrice - discountAmount;
 
         subtotal = subtotal + productPrice;
-
-      }else{
+      } else {
         subtotal = subtotal + productPrice;
       }
-
-      
-      
-
     }
     setsubTotal(subtotal);
     setTaxVal(taxVal);
     settotalTax(totalTax);
   };
 
-  //remove data from Cart
 
   const removeItemFromCart = async (id: number) => {
     let itemArray: any = await AsyncStorage.getItem('cartItems');
@@ -99,7 +91,6 @@ const MyCart = ({navigation}: any) => {
     }
   };
 
-  //checkout
 
   const checkOut = async () => {
     try {
@@ -108,7 +99,7 @@ const MyCart = ({navigation}: any) => {
       return error;
     }
 
-    ToastAndroid.show('Items will be Deliverd SOON!', ToastAndroid.SHORT);
+    ToastAndroid.show('Items will be delivered soon in the `WISHAL SHOPPING STORE`!', ToastAndroid.SHORT);
 
     navigation.navigate('Home');
   };

@@ -39,8 +39,6 @@ const Home = ({navigation}: any) => {
     setAccessory(accessoryList);
   };
 
-  //create an product reusable card
-
   const ProductCard = ({data}: any) => {
     return (
       <TouchableOpacity
@@ -210,7 +208,7 @@ const Home = ({navigation}: any) => {
               letterSpacing: 1,
               marginBottom: 10,
             }}>
-            WELCOME WISHAL SOPPING STORE !
+            WELCOME TO THE WISHAL SHOPPING STORE!
           </Text>
           <Text
             style={{
@@ -221,7 +219,7 @@ const Home = ({navigation}: any) => {
               lineHeight: 24,
             }}>
             shop on Moragalla Beruwala Sri Lanaka.
-            {'\n'}App only benifits make shopping faster and easier
+            {'\n'}App-only benefits make shopping faster and easier.
           </Text>
         </View>
         <View
