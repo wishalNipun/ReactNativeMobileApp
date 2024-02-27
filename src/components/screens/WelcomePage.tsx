@@ -36,8 +36,8 @@ const WelcomePage = ({navigation}: any) => {
             width: '90%',
             marginTop: '10%',
           }}>
-          Welcome to WISHAL SHOPPING STORE Explore and buy a variety of
-          shopping products.
+          Welcome to WISHAL SHOPPING STORE Explore and buy a variety of shopping
+          products.
           {'\n'}
           Enjoy your shopping experience with us!
         </Text>
@@ -53,7 +53,7 @@ const WelcomePage = ({navigation}: any) => {
           alignItems: 'center',
         }}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('Home')}
+          onPress={() => navigation.navigate('SignIn')}
           style={{
             width: '86%',
             height: '90%',

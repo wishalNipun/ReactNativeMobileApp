@@ -5,8 +5,8 @@ import MyCart from './src/components/screens/MyCart';
 import ProductInfo from './src/components/screens/ProductInfo';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SignIn from './src/components/screens/SignIn';
-import SignUp from './src/components/screens/SignUp';
 import WelcomePage from './src/components/screens/WelcomePage';
+import SignUp from './src/components/screens/SignUp';
 function App(): React.JSX.Element {
  
   const Stack = createNativeStackNavigator();
