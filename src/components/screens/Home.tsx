@@ -101,6 +101,41 @@ const Home = ({navigation}: any) => {
           }}>
           {data.productName}
         </Text>
+        {data.isOff ? (
+          <View >
+            <Text
+              style={{
+                fontSize: 12,
+                color: COLOURS.red,
+                fontWeight: '600',
+                marginBottom: 2,
+              }}>
+              LKR {data.productPrice}
+            </Text>
+            <Text
+              style={{
+                fontSize: 12,
+                color: COLOURS.green,
+                fontWeight: '600',
+                marginBottom: 2,
+              }}>
+              {'DISCOUNT:  '}LKR{' '}
+              {data.productPrice +
+                data.productPrice * (data.tax / 100) -
+                data.productPrice * (data.offPercentage / 100)}
+            </Text>
+          </View>
+        ) : (
+          <Text
+            style={{
+              fontSize: 12,
+              color: COLOURS.red,
+              fontWeight: '600',
+              marginBottom: 2,
+            }}>
+            LKR {data.productPrice}
+          </Text>
+        )}
         {data.category == 'accessory' ? (
           data.isAvailable ? (
             <View
@@ -169,9 +204,9 @@ const Home = ({navigation}: any) => {
             justifyContent: 'space-between',
             padding: 16,
           }}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('WelcomePage')}>
             <Entypo
-              name="shopping-bag"
+              name="log-out"
               style={{
                 fontSize: 18,
                 color: COLOURS.backgroundMedium,
