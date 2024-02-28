@@ -1,13 +1,16 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # UI Images
-<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/welcomepage.jpg" width="540" height="1200">
-<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/signup.jpg" width="540" height="1200">
-<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/signin.jpg" width="540" height="1200">
-<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/Home.jpg" width="540" height="1200">
-<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/profileInfo.jpg" width="540" height="1200">
-<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/cart1.jpg" width="540" height="1200">
-<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/cart2.jpg" width="540" height="1200">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+   <img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/welcomepage.jpg" width="540" height="1200">
+   <img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/signup.jpg" width="540" height="1200">
+   <img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/signin.jpg" width="540" height="1200">
+   <img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/Home.jpg" width="540" height="1200">
+   <img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/profileInfo.jpg" width="540" height="1200">
+   <img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/cart1.jpg" width="540" height="1200">
+   <img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/cart2.jpg" width="540" height="1200">
+</div>
+
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
