@@ -1,7 +1,7 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # UI Images
-![Screenshot_20240225_095520_mobileapp 1](https://github.com/wishalNipun/ReactNativeMobileApp/assets/101160353/6fb7a4f6-6928-4284-87fe-a8c27e343612)
+![Screenshot_20240225_095520_mobileapp 1](https://github.com/wishalNipun/ReactNativeMobileApp/assets/101160353/6fb7a4f6-6928-4284-87fe-a8c27e343612 {width=40px height=400px})
 
 ![Screenshot_20240225_095529_mobileapp 1](https://github.com/wishalNipun/ReactNativeMobileApp/assets/101160353/5fe62fee-f2f0-44ba-8e60-42ed81351551)
 
