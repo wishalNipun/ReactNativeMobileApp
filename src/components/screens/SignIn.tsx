@@ -21,10 +21,12 @@ const SignIn = ({navigation}: any) => {
     let isValid = true;
     if (!inputs.email) {
       isValid = false;
+      
     }
     if (!inputs.password) {
       isValid = false;
     }
+    console.log(isValid)
     if (isValid) {
       login();
     } else {
@@ -35,17 +37,15 @@ const SignIn = ({navigation}: any) => {
   const login = () => {
     setTimeout(async () => {
       let userData: any = await AsyncStorage.getItem('userData');
+      
       if (userData) {
         userData = JSON.parse(userData);
+        console.log(userData)
         if (
           inputs.email == userData.email &&
           inputs.password == userData.password
         ) {
-          setInputs({
-            email: '',
-            password: '',
-          });
-
+          
           navigation.navigate('Home');
           AsyncStorage.setItem(
             'userData',
