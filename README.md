@@ -1,16 +1,13 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # UI Images
-<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/welcomepage.jpg" width="400" height="400">
-
-
-![Screenshot_20240225_095529_mobileapp 1](https://github.com/wishalNipun/ReactNativeMobileApp/assets/101160353/5fe62fee-f2f0-44ba-8e60-42ed81351551)
-
-![Screenshot_20240225_095553_mobileapp 1](https://github.com/wishalNipun/ReactNativeMobileApp/assets/101160353/1dc1207b-f5d6-48e1-8eb5-a7f68ffd27cd)
-
-![Screenshot_20240225_095600_mobileapp 1](https://github.com/wishalNipun/ReactNativeMobileApp/assets/101160353/3f3fbde0-b45b-4d96-92fe-72abae84e8fa)
-
-
+<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/welcomepage.jpg" width="540" height="1200">
+<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/signup.jpg" width="540" height="1200">
+<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/signin.jpg" width="540" height="1200">
+<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/Home.jpg" width="540" height="1200">
+<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/profileInfo.jpg" width="540" height="1200">
+<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/cart1.jpg" width="540" height="1200">
+<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/cart2.jpg" width="540" height="1200">
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
