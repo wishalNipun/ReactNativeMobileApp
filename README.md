@@ -1,7 +1,7 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # UI Images
-<img src="https://github.com/wishalNipun/ReactNativeMobileApp/assets/101160353/welcomepage.jpg" width="400" height="400">
+<img src="https://github.com/wishalNipun/ReactNativeMobileApp/blob/master/assets/welcomepage.jpg" width="400" height="400">
 
 
 ![Screenshot_20240225_095529_mobileapp 1](https://github.com/wishalNipun/ReactNativeMobileApp/assets/101160353/5fe62fee-f2f0-44ba-8e60-42ed81351551)
